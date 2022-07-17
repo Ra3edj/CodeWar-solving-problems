@@ -226,3 +226,30 @@ function closeCompare(a, b, margin = 0){
     return 1
   }
 }
+
+// 27) String Templates - Bug Fixing #5
+function buildString(...template){
+  return `I like ${template.join(', ')}!`;
+}
+
+// 28) Failed Sort - Bug Fixing #4
+var sortArray = function(value) {
+  return value.split('').sort((c, p) => c - p ).join('');
+}
+
+// 29) Find Maximum and Minimum Values of a List
+var min = function(list){
+    
+  return Math.min(...list);
+}
+
+var max = function(list){
+  
+  return Math.max(...list);
+}
+
+// 30) Remove String Spaces
+
+function noSpace(x){
+  return x.replace(/ /g , "")
+}
