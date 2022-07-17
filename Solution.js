@@ -181,3 +181,48 @@ function countSheeps(arrayOfSheep) {
   }
   return count;
 }
+
+// 21) Powers of 2
+function powersOfTwo(n){
+    let arr = [];
+    for(let i = 0; i <= n; i++){
+       arr.push(Math.pow(2,i)); 
+    }
+    return arr;
+  }
+
+// 22) Beginner Series #1 School Paperwork
+const paperwork = (n, m) => n < 0 || m < 0 ?  0 : m * n;
+
+// 23) Reverse List Order
+function reverseList(list) {return list.reverse()}
+
+// 24) Is this my tail?
+function correctTail(bod, tail){ return (bod.endsWith(`${tail}`)) ? true : false};
+
+// 25) Merge two sorted arrays into one
+function mergeArrays(arr1, arr2) {
+  
+  if(arr1.length == 0 && arr2.length == 0){return []}
+  
+  else{
+    let mergears = [...arr1 , ...arr2]   
+    let sortarr1 = mergears.filter((value , index , mergears) => {
+       return mergears.indexOf (value) === index;
+  })
+    return sortarr1.sort((a,b)=> a-b)
+   
+   }
+  }
+
+// 26) Compare within margin
+function closeCompare(a, b, margin = 0){
+  // ...
+  if(margin >= a - b && margin >= b - a || -margin == a - b ){
+    return 0
+  }else if(a < b && margin <  b - a){
+    return -1
+  }else if(a > b && margin < a - b){
+    return 1
+  }
+}
