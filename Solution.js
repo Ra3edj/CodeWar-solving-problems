@@ -253,3 +253,37 @@ var max = function(list){
 function noSpace(x){
   return x.replace(/ /g , "")
 }
+
+// 31) Will you make it?
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+  // TODO
+  return distanceToPump <= mpg * fuelLeft 
+};
+
+// 32) Convert a string to an array
+
+function stringToArray(string){
+
+	// code code code
+  return string.split(" ")
+
+}
+
+// 33) Gravity Flip
+const flip=(d, a)=>{
+  //TODO
+  return d == 'R' ? a.sort((a,b) => a - b) : a.sort((a,b) => b - a)
+}
+
+// 34) Quarter of the year
+const quarterOf = (month) => {
+  // Your code here
+  return month >= 1 && month <=3 ? 1 : month >= 4 && month <= 6 ? 2 : month >= 7 && month <= 9 ? 3 : 4;
+  
+}
+
+// 35) Can we divide it?
+function isDivideBy(number, a, b) {
+  // good luck
+  return number % a == 0 && number % b == 0 
+}
