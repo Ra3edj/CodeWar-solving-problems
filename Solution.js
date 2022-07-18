@@ -287,3 +287,43 @@ function isDivideBy(number, a, b) {
   // good luck
   return number % a == 0 && number % b == 0 
 }
+
+// 36) Student's Final Grade
+function finalGrade (exam, projects) {
+  return exam > 90 || projects > 10 ? 100 : exam > 75 && projects >= 5 ? 90 : exam > 50 && projects >= 2 ? 75 : 0;
+}
+
+// 37) Array plus array
+function arrayPlusArray(arr1, arr2) {
+  let mergearr = [...arr1 , ...arr2]; //something went wrong
+  var count = 0;
+  for(let i = 0; i < mergearr.length; i++){
+    count += mergearr[i]
+  }
+  return count;
+}
+
+//38) Define a card suit  
+function defineSuit(card) {
+  // good luck
+  return card.length == 2 ? "♠" == card[1] ? 'spades' : "♣" == card[1] ? 'clubs' :  "♦" == card[1] ? 'diamonds' : 'hearts' :
+   "♠" == card[2] ? 'spades' : "♣" == card[2] ? 'clubs' :  "♦" == card[2] ? 'diamonds' : 'hearts'
+}
+
+// 39) For Twins: 1. Types
+function typeValidation(variable, type) {
+  // Your code should be here ;) 
+  return typeof(variable) == type 
+}
+
+// 40) Type of sum
+function typeOfSum(a, b) {
+  // good luck
+  return typeof(a) == "number" && typeof(b) == "number" ? "number" : 
+  typeof(a) == "string" || typeof(b) == "string" ? "string": "number";
+}
+
+// 41) Third Angle of a Triangle
+function otherAngle(a, b) {
+  return 180 - a - b;
+}
