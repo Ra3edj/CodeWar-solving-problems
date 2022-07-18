@@ -327,3 +327,144 @@ function typeOfSum(a, b) {
 function otherAngle(a, b) {
   return 180 - a - b;
 }
+
+// 42) Reversed sequence
+const reverseSeq = n => {
+  let arr = [];
+  for(let i = n; i > 0; i--){
+    arr.push(i)
+  }
+  return arr;
+};
+
+// 43) Return the day
+function whatday(num) {
+
+  // put your code here
+switch(num){
+  case 1:
+    return "Sunday";
+    break;
+   case 2:
+    return "Monday";
+    break;
+   case 3:
+    return "Tuesday";
+    break;
+  case 4:
+    return "Wednesday";
+    break;
+   case 5:
+    return "Thursday";
+    break;
+   case 6:
+    return "Friday";
+    break;
+   case 7:
+    return "Saturday";
+    break;
+    default: return "Wrong, please enter a number between 1 and 7"
+}}
+
+// 44) Sum The Strings
+function sumStr(a,b) {
+  return  Number(a) + Number(b) + ''
+}
+
+// 45) Invert values
+function invert(array) {
+  return array.map(num => -num)
+}
+
+// 46) Calculate Price Excluding VAT
+//return price without vat
+function excludingVatPrice(price){
+  // your code
+  let vat = (price * 100) / 115;
+  return price == null ? -1 : Math.round((vat + Number.EPSILON) * 100) / 100
+}
+
+// 47) simple calculator
+function calculator(a,b,sign){
+  if(sign == "+" || "-" || "*" || "/" ){
+     if(sign == "+" && typeof(a) == "number" && typeof(b) == "number"){
+       return a + b;
+     }else if (sign == "-" && typeof(a) == "number" && typeof(b) == "number"){
+       return a - b 
+     }else if(sign == "*" && typeof(a) == "number" && typeof(b) == "number"){
+       return a * b
+     }else if(sign == "/" && typeof(a) == "number" && typeof(b) == "number"){
+       return a / b
+     }else{
+       return "unknown value"
+     }
+  }
+};
+
+// 48) Switch it Up!
+function switchItUp(number){
+  //Write your own Code!
+    switch(number){
+        case 0:
+        return "Zero";
+        break;
+        case 1:
+        return "One";
+        break;
+        case 2:
+        return "Two";
+        break;
+        case 3:
+        return "Three";
+        break;
+        case 4:
+        return "Four";
+        break;
+        case 5:
+        return "Five";
+        break;
+        case 6:
+        return "Six";
+        break;
+        case 7:
+        return "Seven";
+        break;
+        case 8:
+        return "Eight";
+        break;
+        case 9:
+        return "Nine";
+        break;
+        
+    }}
+
+
+// 49) Reversing Words in a String
+function reverse(string){
+  //your code here
+  return string.split(" ").reverse().join(" ")
+}
+
+// 50) Remove duplicates from list
+function distinct(a) {
+  return a.filter((value,index) => a.indexOf(value) === index);
+}
+
+// 51) Even or Odd
+function even_or_odd(number) {
+  return number % 2 === 0 ? "Even" : "Odd";
+}
+
+// 52) Shifty Closures
+let name = 'Abe';
+var greet_abe = function() {
+  return "Hello, " + name + '!';
+};
+let name1 = 'Ben';
+var greet_ben = function() {
+  return "Hello, " + name1 + '!';
+};
+
+// 53) Basic Training: Add item to an Array
+// add the value "codewars" to the already defined websites array
+websites.push("codewars")
