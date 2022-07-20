@@ -639,3 +639,58 @@ class SmallestIntegerFinder {
     return Math.min(...args)
   }
 }
+
+// 76) Keep Hydrated!
+function litres(time) {
+  return time >= 2 ? Math.floor(time * 0.5) : 0;
+}
+
+// 77) Basic Mathematical Operations
+function basicOp(operation, value1, value2)
+{
+  // Code
+  return operation == '+' ? value1 + value2 : operation == '-' ? value1 - value2 : 
+  operation == '*' ? value1 * value2 : value1 / value2
+}
+
+// 78) Abbreviate a Two Word Name
+function abbrevName(name){
+
+  // code away
+ let names = name.toUpperCase()
+ let splitnames = names.split(' ');
+ return `${splitnames[0][0]}.${splitnames[1][0]}`;
+
+}
+
+// 79) A Needle in the Haystack
+function findNeedle(haystack) {
+  // your code here
+  for(let i = 0; i <= haystack.length; i++){
+    if(haystack[i] == 'needle'){
+        return `found the needle at position ${i}`
+    }
+  }
+}
+
+// 80) Convert number to reversed array of digits
+function digitize(n) {
+  //code here
+  return String(n).split('').reverse().map(num => num - 0)
+}
+
+// 81) Beginner - Lost Without a Map
+function maps(x){
+   return x.map(num => num * 2)
+  }
+
+// 82) Returning Strings
+function greet(name){
+  //your code here
+  return `Hello, ${name} how are you doing today?`
+}
+
+// 83) Reversed Word
+function reverseWords(str){
+  return str.split(' ').reverse().join(' '); // reverse those words
+}
