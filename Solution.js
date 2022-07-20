@@ -562,3 +562,80 @@ function betterThanAverage(classPoints, yourPoints) {
    return classPoints.reduce((acc,value) => acc + value)  / classPoints.length < yourPoints;
 }
 
+// 64) Convert boolean values to strings 'Yes' or 'No'.
+function boolToWord( bool ){
+  //...
+  return bool == true ? 'Yes':'No';
+}
+
+// 65) Find Multiples of a Number
+function findMultiples(integer, limit) {
+  //your code here
+  let newarr = [];
+  for(let i = integer; i <= limit; i += integer){
+      newarr.push(i);
+  }return newarr;
+}
+
+// 66) Jenny's secret message
+function greet(name){
+  if(name === "Johnny"){
+    return "Hello, my love!";
+    }
+    return "Hello, " + name + "!";
+}
+
+// 67) Grasshopper - Order of operations
+function orderOperations () {
+  return 2 + 2 * 2 + 2 * 2 + 22
+}
+
+// 68) Grasshopper - Array Mean
+var findAverage = function (nums) {
+  // Code here
+  return nums.reduce((acc,value) => acc + value) / nums.length
+}
+
+// 69) Sum of positive
+function positiveSum(arr) {
+  let positivearr =  arr.filter(positivenum => positivenum > 0);
+  return positivearr.length == 0 ? 0 : positivearr.reduce((acc,value) => acc + value)
+}
+
+// 70) Reversed Strings
+function solution(str){
+  return str.split('').reverse().join('');
+}
+
+ // 71) Remove First and Last Character
+ function removeChar(str){
+  //You got this!
+   return str.slice(1,-1)
+   
+ };
+ 
+ // 72) String repeat
+ function repeatStr (n, s) {
+  return s.repeat(n);
+}
+
+// 73) Grasshopper - Summation
+var summation = function (num) {
+  // Code here
+  let sum = 0;
+  for(let i = 0; i <= num; i++){
+    sum += i;
+  }return sum;
+}
+
+// 74) Square(n) Sum
+function squareSum(numbers){
+  return numbers.reduce((acc,value) => acc + Math.pow(value , 2) , 0)
+}
+
+// 75) Find the smallest integer in the array
+class SmallestIntegerFinder {
+  findSmallestInt(args) {
+    return Math.min(...args)
+  }
+}
