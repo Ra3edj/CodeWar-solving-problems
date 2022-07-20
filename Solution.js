@@ -468,3 +468,97 @@ var greet_ben = function() {
 // 53) Basic Training: Add item to an Array
 // add the value "codewars" to the already defined websites array
 websites.push("codewars")
+
+// 54) Return to Sanity
+function mystery() {
+  let results = {sanity: 'Hello'};
+  return results;
+}
+
+// 55) Max Headroom and JavaScript style
+let max = 
+  {
+   name: 'Max Headroom'
+  }
+   
+function getMax1()
+{
+  return max;
+}
+
+function getMax2()
+{
+  return max;
+}
+
+// 56) Hello Happy Codevarrior!
+function Warrior(n){
+  let  name = n;  
+    this.name = function(n){
+      if( n ) name=n;
+      return name;
+    }
+  }
+    
+  Warrior.prototype.toString = function(){
+      return "Hi! my name's "+this.name();
+  }
+
+// 57) Unexpected parsing
+function getStatus(isBusy) {
+  var msg = (isBusy ? "busy" : "available");
+  return  {status: msg}
+
+}
+
+// 58) Switch/Case - Bug Fixing #6
+function evalObject(value){
+  var result = 0;
+  switch(value.operation){
+    case'+': result = value.a + value.b;
+    break;
+    case'-': result = value.a - value.b;
+      break;
+    case'/': result = value.a / value.b;
+      break;
+    case'*': result = value.a * value.b;
+      break;
+    case'%': result = value.a % value.b;
+      break;
+    case'^': result = Math.pow(value.a, value.b);
+      break;
+  }
+  return result;
+}
+
+// 59) Improving Math.round(x)
+Math.roundTo = function (number, precision) {
+  // TODO: Program Me
+  return number.toFixed(precision) - 0
+}
+
+// 60) Power
+function numberToPower(number, power){
+  // Code here
+  let result = 1;
+   for(var i = 1; i <= power; i++){
+     result *= number;
+   }return result
+}
+
+// 61) Push a hash/an object into array
+items = []
+items.push({a: "b", c: "d"})
+
+// 62) Convert a Number to a String!
+function numberToString(num) {
+  // Return a string of the number here!
+  return num + ''
+}
+
+// 63) How good are you really?
+function betterThanAverage(classPoints, yourPoints) {
+  // Your code here
+   return classPoints.reduce((acc,value) => acc + value)  / classPoints.length < yourPoints;
+}
+
