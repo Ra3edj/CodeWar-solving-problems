@@ -803,3 +803,99 @@ function updateLight(current) {
     return current == 'green' ? 'yellow' : current == 'yellow' ? 'red' : 'green'
   
   }
+
+// 101) Beginner Series #4 Cockroach
+function cockroachSpeed(s) {
+    //Good Luck!
+    return Math.floor(s * 27.7778)
+  }
+
+// 102) Get Planet Name By ID
+function getPlanetName(id){
+    var name;
+    switch(id){
+      case 1:
+        name = 'Mercury'
+        break;
+      case 2:
+        name = 'Venus'
+        break;
+      case 3:
+        name ='Earth'
+        break;
+      case 4:
+        name = 'Mars'
+        break;
+      case 5:
+        name = 'Jupiter'
+        break;
+      case 6:
+        name = 'Saturn'
+        break;
+      case 7:
+        name = 'Uranus'
+        break;
+      case 8:
+        name = 'Neptune'
+        break;
+    }
+    
+    return name;
+  }
+
+// 103) Keep up the hoop
+function hoopCount (n) {
+    //your code goes here    
+   return n >= 10 ? "Great, now move on to tricks" : "Keep at it until you get it" 
+ }
+
+// 104) Squash the bugs
+function findLongest(str){
+  
+    let spl = str.split(" ");
+    let longest = 0
+    
+    for (var i = 0; i < spl.length; i++){
+      if (spl[i].length > longest){
+        longest = spl[i].length
+      
+      }}
+      return longest
+  }
+
+
+// 105) Parse nice int from char problem
+function getAge(inputString){
+    // return the girl's correct age as an integer. Happy coding :) 
+      return +inputString[0]
+    }
+
+
+// 106) Find numbers which are divisible by given number
+function divisibleBy(numbers, divisor){
+    return numbers.filter(num => num % divisor == 0)
+  }
+
+// 107) All Star Code Challenge #18
+function strCount(str, letter){  
+    //code here
+    let arr = [];
+    for(let i = 0; i <= str.length; i++){
+      if(str[i] == letter){
+        arr.push(str[i])
+      }
+    }return arr.length
+  }
+
+// 108) To square(root) or not to square(root)
+function squareOrSquareRoot(array) {
+    return array.map(num => Math.sqrt(num) - Math.floor(Math.sqrt(num)) !== 0 ? num * num : Math.sqrt(num))  
+  }
+
+// 109) Difference of Volumes of Cuboids
+function findDifference(a, b) {
+    //loading...
+    return a.reduce((acc,value) => acc * value) > b.reduce((acc,value) => acc * value) ? 
+       a.reduce((acc,value) => acc * value) - b.reduce((acc,value) => acc * value) : 
+    b.reduce((acc,value) => acc * value) - a.reduce((acc,value) => acc * value)
+  }
