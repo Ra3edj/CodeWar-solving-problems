@@ -899,3 +899,56 @@ function findDifference(a, b) {
        a.reduce((acc,value) => acc * value) - b.reduce((acc,value) => acc * value) : 
     b.reduce((acc,value) => acc * value) - a.reduce((acc,value) => acc * value)
   }
+
+// 110) Unfinished Loop - Bug Fixing #1
+function createArray(number){
+  var newArray = [];
+  
+  for(var i = 1; i <= number; i++){
+    newArray.push(i);
+  }
+  
+  return newArray;
+}
+
+// 111) Is it a palindrome?
+function isPalindrome(x) {
+    // your code here
+    return x.split('').reverse().join('').toUpperCase() == x.toUpperCase() ? true : false;
+  }
+
+// 112) Is it even?
+function testEven(n) {
+    //Your awesome code here!
+  return n % 2 == 0;
+}
+
+// 113) Grasshopper - Messi goals function
+function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+    // code goes here
+    return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
+}
+
+// 114) What is between?
+function between(a, b) {
+    // your code here
+    let arr = [];
+    for(let i = a; i <= b; i++){
+      arr.push(i)
+    }return arr
+}
+
+// 115) Grasshopper - Debug sayHello
+function sayHello(name) {
+  return 'Hello, ' + name
+}
+
+
+// 116) Grasshopper - If/else syntax debug
+function checkAlive (health) {
+    if (health > 0) {
+      return true
+    } else{
+      return false
+    }
+  }
