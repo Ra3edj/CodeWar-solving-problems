@@ -694,3 +694,112 @@ function greet(name){
 function reverseWords(str){
   return str.split(' ').reverse().join(' '); // reverse those words
 }
+
+// 84) Calculate average
+function find_average(array) {
+    // your code here
+    return array.length == 0 ? 0 : array.reduce((acc , value) => acc + value) / array.length;
+  }
+
+// 85) You only need one - Beginner
+function check(a, x) {
+    // your code here
+    return a.includes(x);
+  }
+
+// 86) Opposites Attract
+function lovefunc(flower1, flower2){
+    // moment of truth
+    return flower1 % 2 == 0 && flower2 % 2 == 1 ? true : flower1 % 2 == 1 && flower2 % 2 == 0 ? true : false; 
+  }
+
+// 87) Are You Playing Banjo?
+function areYouPlayingBanjo(name) {
+    // Implement me
+    return name[0] == 'R' || name[0] == 'r' ? `${name} plays banjo` : `${name} does not play banjo`;
+  }
+
+ // 88)  Beginner - Reduce but Grow
+function grow(x){
+    return x.reduce((acc , value) => acc * value)
+ }
+
+// 89) Get the mean of an array
+function getAverage(marks){
+    //TODO : calculate the downward rounded average of the marks array
+    return Math.floor(marks.reduce((acc , value) => acc + value) / marks.length);
+  }
+
+// 90) MakeUpperCase
+function makeUpperCase(str) {
+    // Code here
+    return str.toUpperCase();
+  }
+
+// 91) DNA to RNA Conversion
+function DNAtoRNA(dna) {
+    // create a function which returns an RNA sequence from the given DNA sequence
+    return dna.replace(/T/g , 'U')
+  }
+
+// 92) Count the Monkeys!
+function monkeyCount(n) {
+    // your code here
+      let arr = [];
+      for(let i = 1; i <= n; i++){
+        arr.push(i);
+      }return arr;
+    }
+
+// 93) Sentence Smash
+function smash (words) {
+   return words.join(' ')
+};
+
+// 94) Count by X
+function countBy(x, n) {
+    let z = [];
+    for(let i = x; i <= x * n; i += x){
+      z.push(i)
+    }
+    return z;
+  }
+
+// 95) You Can't Code Under Pressure #1
+function doubleInteger(i) {
+    // i will be an integer. Double it and return it.
+    return i * 2;
+  }
+
+// 96) Sum Mixed Array
+function sumMix(x){
+  //  acc - 0 or value - 0 convert the string to number 
+  return x.reduce((acc,value) => (acc - 0) + (value - 0)) - 0
+}
+
+// 97) Remove exclamation marks
+function removeExclamationMarks(s) {
+    return s.replace(/!/g , "");
+  }
+
+// 98) Double Char
+function doubleChar(str) {
+    // Your code here
+    return str.split('').map(string => string.repeat(2)).join('')
+  }
+
+// 99) Removing Elements
+function removeEveryOther(arr){
+    //your code here
+    let newarr = [];
+    for(let i = 0; i < arr.length ; i += 2){
+      newarr.push(arr[i])
+    } return newarr;
+}
+
+// 100) Thinkful - Logic Drills: Traffic light
+function updateLight(current) {
+    //your code here!
+    return current == 'green' ? 'yellow' : current == 'yellow' ? 'red' : 'green'
+  
+  }
