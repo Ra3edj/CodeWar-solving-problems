@@ -491,7 +491,7 @@ function getMax2()
   return max;
 }
 
-// 56) Hello Happy Codevarrior!
+// 56) Hello Happy Codevarrior!!
 function Warrior(n){
   let  name = n;  
     this.name = function(n){
